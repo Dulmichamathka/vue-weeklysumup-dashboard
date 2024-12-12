@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Dashboard from "../views/Dashboard.vue";
 
-const routes = [{ path: "/", name: "home", component: "Home" }];
+const routes = [
+  { path: "/", redirect: "/dashboard" },
+  { path: "/dashboard", name: "Dashboard", component: Dashboard },
+];
 
 const router = createRouter({
   history: createWebHistory(),
