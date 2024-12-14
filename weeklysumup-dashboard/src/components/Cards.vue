@@ -1,8 +1,8 @@
 <template>
-  <v-card class="rounded-xl pa-4">
+  <v-card class="rounded-xl pa-4 custom-shadow">
     <v-toolbar-title>Cards</v-toolbar-title>
     <v-row>
-      <v-col cols="12" sm="8" style="position: relative">
+      <v-col cols="12" sm="8" md="8" style="position: relative">
         <v-slide-group center-active show-arrows>
           <template v-slot:prev="{ props }">
             <v-btn
@@ -24,12 +24,12 @@
           </template>
           <v-slide-group-item v-for="(card, i) in cards" :key="i">
             <div
-              class="mt-4 ml-0 d-flex flex-column"
+              class="mt-4 ml-0 d-flex flex-column custom-card"
               style="
                 position: relative;
                 overflow: hidden;
                 color: white;
-                background: linear-gradient(to right, #1976d2, #64b5f6);
+                background: #1976d2;
                 padding: 20px;
                 border-radius: 20px;
                 width: 308px;
@@ -85,6 +85,46 @@
             style="width: 310px; margin-left: 21px"
           ></v-progress-linear>
         </div>
+
+        <div class="mx-5 mt-3 mb-5 d-flex justify-space-between">
+          <small style="color: #d9d9d9">Weekly payment limit</small>
+          <p style="font-weight: 700; opacity: 0.8; font-size: 15px">
+            $350.60/$4000
+          </p>
+        </div>
+      </v-col>
+      <v-col md="1" class="divider-col">
+        <v-divider vertical></v-divider>
+      </v-col>
+      <v-col md="3">
+        <div class="mt-5 d-flex" style="flex-wrap: wrap">
+          <span class="font-weight-bold" style="color: #1976d2; margin-top: 7px"
+            >$</span
+          >
+          <p
+            class="ml-1"
+            style="
+              color: #1976d2;
+              display: inline-block;
+              font-size: 23px;
+              font-weight: 600;
+              margin-bottom: 0px;
+            "
+          >
+            2850.75
+          </p>
+          <small class="ml-2" style="color: #d9d9d9">Current balance</small>
+        </div>
+        <div class="mt-4 d-flex" style="flex-wrap: wrap">
+          <span class="ml-6" style="color: green">$ 1500.50</span>
+          <small style="color: #d9d9d9; margin-left: 55px">Income</small>
+        </div>
+        <div class="mt-4 d-flex" style="flex-wrap: wrap">
+          <span class="ml-8" style="color: red">$ 350.60</span>
+          <small style="color: #d9d9d9; margin-left: 45px">Outcome</small>
+        </div>
+        <div class="mt-5 ml-14"><v-switch hide-details></v-switch></div>
+        <small class="ml-1" style="color: #d9d9d9">Deactivate card</small>
       </v-col>
     </v-row>
   </v-card>
@@ -117,6 +157,10 @@ const cards = [
 </script>
 
 <style>
+html,
+body {
+  font-family: "Nunito", sans-serif !important;
+}
 .v-card {
   border-radius: 16px;
   height: 100%;
@@ -133,6 +177,23 @@ const cards = [
   color: rgb(0, 110, 220) !important;
 }
 
-.v-progress-linear__background {
+.divider-col {
+  display: flex;
+  height: 220px;
+  margin-top: 18px;
+}
+
+.v-switch__track {
+  height: 20px !important;
+  background-color: #e6e6e6 !important;
+}
+.v-switch__thumb {
+  background-color: #cccccc !important;
+  box-shadow: none !important;
+}
+
+.custom-shadow {
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1), 0px 6px 15px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 16px; /* Match the card's rounded corners */
 }
 </style>

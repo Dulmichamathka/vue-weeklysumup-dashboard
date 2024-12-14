@@ -9,6 +9,9 @@ import { createVuetify } from "vuetify";
 vuetify.use(Vuetify);
 
 const vuetify = createVuetify({
+  typography: {
+    defaultFontFamily: "Nunito, sans-serif",
+  },
   icons: {
     defaultSet: "fa", // Use FontAwesome as the default icon set
     sets: {
