@@ -24,36 +24,39 @@
         </h4>
       </v-container>
 
-      <v-list nav dense class="pa-5">
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          class="item-hover"
-          :class="{ 'active-item': activedItem === item.name }"
-          @click="setActive(item)"
-        >
-          <div class="list-content">
-            <v-icon
-              class="list-icon"
-              :class="{
-                'text-primary': activedItem === item.name,
-                'text-grey': activedItem !== item.name,
-              }"
-            >
-              {{ item.icon }}
-            </v-icon>
-            <span
-              class="list-title"
-              :class="{
-                'text-primary': activedItem === item.name,
-                'text-gray': activedItem !== item.name,
-              }"
-            >
-              {{ item.name }}
-            </span>
-          </div>
-        </v-list-item>
-      </v-list>
+      <div class="justify-between d-flex felx-column">
+        <v-list nav dense class="pa-5">
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+            class="item-hover"
+            :class="{ 'active-item': activedItem === item.name }"
+            @click="setActive(item)"
+          >
+            <div class="list-content">
+              <v-icon
+                class="list-icon"
+                :class="{
+                  'text-primary': activedItem === item.name,
+                  'text-grey': activedItem !== item.name,
+                }"
+              >
+                {{ item.icon }}
+              </v-icon>
+              <span
+                class="list-title"
+                :class="{
+                  'text-primary': activedItem === item.name,
+                  'text-gray': activedItem !== item.name,
+                }"
+              >
+                {{ item.name }}
+              </span>
+            </div>
+          </v-list-item>
+        </v-list>
+        <div><img src="/public/logo.PNG" alt="" /></div>
+      </div>
     </v-navigation-drawer>
   </nav>
 </template>

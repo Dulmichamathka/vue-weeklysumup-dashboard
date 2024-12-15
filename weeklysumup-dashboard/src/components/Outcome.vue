@@ -15,7 +15,7 @@
         rounded
         color="orange"
         model-value="52"
-        style="width: 375px; margin-left: 21px; margin-top: 5px"
+        style="width: 400px; margin-left: 21px; margin-top: 5px"
       ></v-progress-linear>
       <small style="color: #d9d9d9; margin-left: 20px">Shopping</small>
     </div>
@@ -47,7 +47,7 @@
         rounded
         color="green"
         model-value="21"
-        style="width: 375px; margin-left: 21px; margin-top: 5px"
+        style="width: 400px; margin-left: 21px; margin-top: 5px"
       ></v-progress-linear>
       <small style="color: #d9d9d9; margin-left: 20px">Electronic</small>
     </div>
@@ -79,7 +79,7 @@
         rounded
         color="#039BE5"
         model-value="74"
-        style="width: 375px; margin-left: 21px; margin-top: 5px"
+        style="width: 400px; margin-left: 21px; margin-top: 5px"
       ></v-progress-linear>
       <small style="color: #d9d9d9; margin-left: 20px">Travels</small>
     </div>
