@@ -1,6 +1,6 @@
 <template>
   <v-card class="rounded-xl pa-4 custom-shadow">
-    <v-card-title>Transaction history</v-card-title>
+    <h3>Transaction history</h3>
     <v-table>
       <thead>
         <tr style="color: #cccccc">

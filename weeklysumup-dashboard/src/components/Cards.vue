@@ -1,14 +1,14 @@
 <template>
   <v-card class="rounded-xl pa-4 custom-shadow">
-    <v-toolbar-title>Cards</v-toolbar-title>
+    <h3>Cards</h3>
     <v-row>
       <v-col cols="12" sm="8" md="8" style="position: relative">
         <v-slide-group center-active show-arrows>
-          <template v-slot:prev="{ props }">
+          <template v-slot:prev="{ next }">
             <v-btn
               icon
               variant="text"
-              v-bind="props"
+              @click="next"
               style="position: absolute; left: -4px; top: 105px"
               ><v-icon color="primary">fas fa-chevron-left</v-icon></v-btn
             >
@@ -195,5 +195,10 @@ body {
 .custom-shadow {
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1), 0px 6px 15px rgba(0, 0, 0, 0.1) !important;
   border-radius: 16px; /* Match the card's rounded corners */
+}
+
+.v-slide-group__next--disabled,
+.v-slide-group__prev--disabled {
+  opacity: 1 !important;
 }
 </style>
