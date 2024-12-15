@@ -87,4 +87,9 @@ const goals = [
 .v-slide-group_container {
   margin-left: 0 !important;
 }
+
+.v-slide-group__prev,
+.v-slide-group__next {
+  min-width: 10px !important;
+}
 </style>
