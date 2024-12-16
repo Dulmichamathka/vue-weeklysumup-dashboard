@@ -24,7 +24,13 @@
         </h4>
       </v-container>
 
-      <div class="justify-between d-flex felx-column">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        "
+      >
         <v-list nav dense class="pa-5">
           <v-list-item
             v-for="(item, i) in items"
@@ -55,7 +61,36 @@
             </div>
           </v-list-item>
         </v-list>
-        <div><img src="/public/logo.PNG" alt="" /></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+          "
+        >
+          <img
+            src="/public/logo.jpg"
+            width="100px"
+            height="100px"
+            style="margin-left: 10px"
+          />
+          <small>Get your money</small>
+          <small>awesome space in colud</small>
+          <v-btn
+            class="mt-1"
+            flat
+            color="#FFB300"
+            style="text-transform: none; font-size: small; border-radius: 15px"
+            >Upgrade to premium
+            <v-icon
+              icon="fas fa-arrow-up"
+              style="font-size: 12px; margin-left: 1px"
+            ></v-icon
+          ></v-btn>
+        </div>
       </div>
     </v-navigation-drawer>
   </nav>

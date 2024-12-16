@@ -13,8 +13,8 @@
       <tbody>
         <tr v-for="item in items" :key="item.reciever">
           <td>
-            <v-chip
-              ><v-icon style="opacity: 0.7">{{ item.icon }}</v-icon>
+            <v-chip style="opacity: 0.7; margin-right: 2px"
+              ><v-icon size="14px">{{ item.icon }}</v-icon>
             </v-chip>
             {{ item.reciever }}
           </td>
