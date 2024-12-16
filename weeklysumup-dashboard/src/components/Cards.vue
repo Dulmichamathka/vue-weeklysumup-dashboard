@@ -47,10 +47,7 @@
               </div>
               <div style="position: relative; z-index: 100">
                 <div>
-                  <h5
-                    class="font-weight-500"
-                    style="font-family: monospace; font-size: 15px"
-                  >
+                  <h5 class="font-weight-500" style="font-size: 15px">
                     {{ card.title }}
                   </h5>
                   <p style="font-size: 8px; color: #f2f2f2">

@@ -1,5 +1,5 @@
 <template>
-  <h3 class="mb-2">Outcome Statistics</h3>
+  <h3 class="mt-2">Outcome Statistics</h3>
 
   <div class="mt-4 d-flex">
     <v-btn

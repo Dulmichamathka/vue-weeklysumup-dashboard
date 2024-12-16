@@ -19,7 +19,7 @@
           </template>
         </v-badge>
 
-        <h4 class="ml-4" style="color: #003399; font-family: monospace">
+        <h4 class="ml-4" style="color: #003399; font-size: larger">
           cloudcash
         </h4>
       </v-container>

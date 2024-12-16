@@ -2,8 +2,8 @@
   <v-row>
     <v-col cols="12" sm="12" md="8">
       <v-card
-        class="pt-4 pb-4 pl-3 pr-3 mt-1 rounded-xl"
-        style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)"
+        class="pt-4 pl-3 pr-3 mt-8 rounded-xl"
+        style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 180px"
       >
         <h3>New Transaction</h3>
 
@@ -35,7 +35,7 @@
               "
               type="text"
               v-model="data"
-              placeholder="   0                                $"
+              placeholder="   0                              $"
             />
           </div>
 
@@ -62,10 +62,10 @@
           justify-content: end;
           padding: 5px;
         "
-        width="150px"
-        height="185px"
+        width="160px"
+        height="180px"
         color="#DE5E47"
-        class="rounded-xl"
+        class="mt-8 rounded-xl"
       >
         <div style="position: absolute; color: black; opacity: 0.08">
           <v-icon
